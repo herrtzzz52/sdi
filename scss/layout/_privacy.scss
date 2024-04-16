@@ -1,0 +1,29 @@
+
+.privacy,
+.usage,
+.restrictions,
+.privacyPolicy,
+.limitation,
+.copyright,
+.support,
+.contacts,
+.winProxy {
+  padding: 25px 0;
+  & .title {
+    max-width: 1100px;
+  }
+  & .subtitle {
+    margin-bottom: 15px;
+  }
+  & .privacy-item {
+    margin-bottom: 10px;
+  }
+}
+.privacy__date {
+  margin: 15px 0;
+}
+.privacy-item {
+  & a {
+    text-decoration: underline;
+  }
+}

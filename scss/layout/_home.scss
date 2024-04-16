@@ -1,0 +1,24 @@
+.home {
+  padding: 50px 0;
+}
+.home__information {
+  max-width: 1000px;
+  &-title {
+    margin-bottom: 40px;
+  }
+  &-description span {
+    color: var(--red-col);
+  }
+  &-compatibility {
+    margin: 40px 0;
+  }
+  &-button {
+    & svg {
+      margin-right: 10px;
+    }
+  }
+  &-characteristic {
+    font-size: 0.9em;
+    margin-top: 20px;
+  }
+}

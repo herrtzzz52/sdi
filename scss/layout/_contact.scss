@@ -1,0 +1,56 @@
+.contact {
+  padding: 50px 0;
+  background: var(--dark-col);
+  &__row {
+    @include flex-between;
+  }
+}
+.col-1 {
+  transform: translateY(-15px);
+}
+.contact__column {
+  max-width: 300px;
+  & .desript-mg {
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+  & .desript-mg2 {
+    margin-bottom: 15px;
+  }
+  &-email {
+    color: var(--wht-col);
+    font-weight: 500;
+    font-size: 0.9em;
+    font-family: var(--inter-font);
+    & a {
+      text-decoration: underline;
+      transition: all .3s;
+      &:hover {
+        color: var(--red-col);
+      }
+    }
+  }
+  &-description {
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+  &-list {
+    & li {
+      margin-bottom: 15px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &-link {
+    color: var(--wht-col);
+    font-weight: 500;
+    font-size: 0.9em;
+    font-family: var(--inter-font);
+    transition: all .3s;
+    opacity: 0.8;
+    &:hover {
+      color: var(--red-col);
+    }
+  }
+}

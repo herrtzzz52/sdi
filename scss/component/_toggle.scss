@@ -1,0 +1,49 @@
+.header__toggle {
+  cursor: pointer;
+  padding: 12px 0;
+  z-index: 10000;
+  display: block;
+  background: transparent;
+  display: none;
+  span {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    transition: all 0.2s ease-in-out;
+    background: var(--wht-col);
+    border-radius: 30px;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    &:before,
+    &:after {
+      position: absolute;
+      background: var(--wht-col);
+      content: "";
+      width: 25px;
+      height: 2px;
+      transition: all 0.2s ease-in-out;
+      background: var(--wht-col);
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    &:before {
+      top: -8px;
+    }
+    &:after {
+      top: 8px;
+    }
+  }
+}
+.header__toggle.active {
+  span {
+    background: transparent;
+    &:before {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+    &:after {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+  }
+}

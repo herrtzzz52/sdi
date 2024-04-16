@@ -1,0 +1,35 @@
+.header {
+  height: 87px;
+  &__fixed {
+    padding: 30px 0;
+    background: var(--dark-col);
+    position: fixed;
+    width: 100%;
+    top: 0; right: 0;
+    z-index: 10;
+  }
+  &__inner {
+    @include flex-default;
+  }
+}
+.header__nav {
+  &-list{
+    display: flex;
+  }
+  &-item {
+    margin-right: 30px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &-link {
+    font-family: var(--inter-font);
+    color: var(--wht-col);
+    transition: all .3s;
+    font-weight: 500;
+    font-size: 1em;
+    &:hover {
+      color: var(--red-col);
+    }
+  }
+}

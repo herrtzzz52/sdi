@@ -1,0 +1,31 @@
+.about {
+  padding: 50px 0;
+  &__body {
+    @include flex-default;
+    background: var(--bcg-col);
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    overflow: hidden;
+  }
+  &__heading {
+    margin-bottom: 40px;
+  }
+}
+.about__information {
+  max-width: 870px;
+  margin-right: 15px;
+  &-description {
+    font-size: 1em;
+  }
+  & .description-last {
+    margin-top: 30px;
+  }
+}
+.about__images {
+  transform: translateX(20px);
+  & img {
+    width: 500px;
+    border-radius: 10px;
+  }
+}

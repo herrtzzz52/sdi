@@ -1,0 +1,26 @@
+.peerProfit__main {
+  & section {
+    padding: 25px 0;
+    & .subtitle {
+      margin-bottom: 15px;
+    }
+    & .description-text {
+      margin-bottom: 15px;
+    }
+  }
+}
+.peerProfit {
+  & .subtitle {
+    margin: 15px 0;
+  }
+  &__images {
+    max-width: 900px;
+    margin-top: 15px;
+    & img {
+      width: 100%;
+    }
+  }
+}
+.participation {
+  
+}

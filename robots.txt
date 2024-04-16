@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /pages/LicenseAgreement.html
+Disallow: /pages/Peer2Profit.html
+Sitemap: https://sdi.red//sitemap.xml

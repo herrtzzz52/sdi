@@ -1,0 +1,15 @@
+.button {
+  font-family: var(--inter-font);
+  background: var(--red-col);
+  font-weight: 600;
+  display: block;
+  width: 320px;
+  font-size: 1.2em;
+  @include flex-itcenter;
+  justify-content: center;
+  transition: all .3s;
+  padding: 20px 0;
+  &:hover {
+    opacity: 0.8;
+  }
+}

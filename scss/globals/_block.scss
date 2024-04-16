@@ -1,0 +1,63 @@
+.wrapper {
+  min-height: 100%; 
+  width: 100%;
+  overflow: hidden;
+}
+main {
+  position: relative;
+}
+.container {
+  max-width: 1430px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+.logo {
+  font-family: var(--inter-font);
+  color: var(--wht-col);
+  transition: all .3s;
+  font-size: 1.3em;
+  font-weight: 700;
+  @include flex-itcenter;
+  & svg {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    fill: var(--red-col);
+    transition: all .3s;
+  }
+  &:hover {
+    color: var(--red-col);
+  }
+  &:hover svg {
+    fill: var(--red-col);
+  }
+}
+.title {
+  font-family: var(--inter-font);
+  color: var(--wht-col);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 3em;
+  & span {
+    color: var(--red-col);
+  }
+}
+.subtitle {
+  font-family: var(--inter-font);
+  color: var(--wht-col);
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 2em;
+}
+.description-text {
+  font-family: var(--inter-font);
+  color: var(--wht-col);
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 2;
+  opacity: 0.9;
+  & span {
+    color: var(--red-col);
+  }
+}
